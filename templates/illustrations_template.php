@@ -33,30 +33,24 @@ get_header(); ?>
 					<?php
 					// The Arguments
 					$args = array(
-					    'post_type' => '5280_portfolio',
-					    'posts_per_page' => 12
+					    'post_type' => '5280_illustrations',
+					    'posts_per_page' => 3
 					);
 					// Start Loop
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 					?>
-					<!--  Begin Column One Fifth; Image Here -->
-					<div class="column one" style="height: 100px; background:url(<?php the_field('work_logo_image'); ?>);">
+					<!--  Begin Column One ; Image Here -->
+					<div class="column one" style="height: 100px; background:url(<?php the_field('work_illustration_image'); ?>);">
 						<?php echo the_title(); ?>
 					</div>
-					<!--  End Column One Fifth; Image Here -->
+					<!--  End Column One; Image Here -->
 
-					<!--  Begin Column Three Fifths; Image Here -->
-					<div class="column three" style="height: 100px; background:url(<?php the_field('work_illustration_image'); ?>);">
-						<?php echo the_title(); ?>
-					</div>
-					<!--  End Column Three Fifths; Image Here -->
 
-					<!--  Begin Column One Fifth; Image Here -->
-					<div class="column one" style="height: 100px; background:url(<?php the_field('work_square_image'); ?>);">
-						<?php echo the_title(); ?>
-					</div>
-					<!--  End Column One Fifth; Image Here -->
+
+
+
+
 
 					<?php
 					// End Loop

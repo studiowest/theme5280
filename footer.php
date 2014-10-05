@@ -11,13 +11,22 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class= row >
+		<div class= row >
+
+			<img src goes here>
+
+			add nav footer (social) from function.php
+
+			<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+
+			<p>Copyright &copy; <?php echo date("2014"); ?> <?php bloginfo('swedesign.co'); ?> All Rights Reserved.</p>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 
