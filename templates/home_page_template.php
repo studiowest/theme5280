@@ -125,37 +125,41 @@ get_header(); ?>
 <!-- End Fourth Row Here -->
 
 <!-- Blog Post Area -->
--				<div class="row"></div>
-+				<div class="row">
-+					<?php
-+					// The Arguments
-+					$args = array(
-+									'post_type' => 'post',
-+									'category_name' => 'blog',
-+									'posts_per_page' => 3
-+					);
-+					// Start Loop
-+					$loop = new WP_Query( $args );
-+					while ( $loop->have_posts() ) : $loop->the_post();
-+					?>
-+
-+					<div class="blog-post">
-+						<h3><?php the_title(); ?></h3>
-+						<p><?php the_date(); ?> - <?php the_author(); ?></p>
-+						<?php echo wp_trim_words( get_the_content(), 40 ); ?>
-+						<a href="<?php the_permalink(); ?>">Read More <span class="genericon genericon-next"></span></a>
-+					</div>
-+
-+					<?php
-+						// Reset Loop
-+						endwhile;
-+						wp_reset_postdata();
-+					?>
-+
-+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>categories/blog/">View More <span class="genericon genericon-next"></span></a>
-+				</div>
+				<div class="row"></div>
+				<div class="row">
+					<?php
+					// The Arguments
+					$args = array(
+									'post_type' => 'post',
+									'category_name' => 'blog',
+									'posts_per_page' => 3
+					);
+					// Start Loop
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					?>
+
+					<div class="blog-post">
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_date(); ?> - <?php the_author(); ?></p>
+						<?php echo wp_trim_words( get_the_content(), 40 ); ?>
+						<a href="<?php the_permalink(); ?>">Read More <span class="genericon genericon-next"></span></a>
+					</div>
+
+					<?php
+						// Reset Loop
+						endwhile;
+						wp_reset_postdata();
+					?>
+
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>categories/blog/">View More <span class="genericon genericon-next"></span></a>
+				</div>
  				<!-- End Blog Post Area -->
 					<a href="/portfolio">View More<span class="genericon genericon-next"></span></a>
+
+					
+				<?php endwhile; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
