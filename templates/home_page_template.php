@@ -104,19 +104,19 @@ get_header(); ?>
 				<div class="row">
 
 					<!--  Begin Column One Fifth; Image Here -->
-					<div class="column one" style="height: 100px; background:url(<?php the_field('work_square_image'); ?>);">
+					<div class="column fifth" style="height: 100px; background:url(<?php the_field('work_square_image'); ?>);">
 						<?php echo the_title(); ?>
 					</div>
 					<!--  End Column One Fifth; Image Here -->
 
 					<!--  Begin Column Three Fifths; Image Here -->
-					<div class="column three" style="height: 100px; background:url(<?php the_field('work_illustration_image'); ?>);">
+					<div class="column three-fifths" style="height: 100px; background:url(<?php the_field('work_illustration_image'); ?>);">
 						<?php echo the_title(); ?>
 					</div>
 					<!--  End Column Three Fifths; Image Here -->
 
 					<!--  Begin Column One Fifth; Image Here -->
-					<div class="column one" style="height: 100px; background:url(<?php the_field('work_logo_image'); ?>);">
+					<div class="column fifth" style="height: 100px; background:url(<?php the_field('work_logo_image'); ?>);">
 						<?php echo the_title(); ?>
 					</div>
 					<!--  End Column One Fifth; Image Here -->
@@ -157,7 +157,7 @@ get_header(); ?>
  				<!-- End Blog Post Area -->
 					<a href="/portfolio">View More<span class="genericon genericon-next"></span></a>
 
-					
+
 				<?php endwhile; ?>
 
 		</main><!-- #main -->
