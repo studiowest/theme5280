@@ -1,0 +1,16 @@
+.row{
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+.column, .columns{
+      float: left;
+      box-sizing: border-box;
+      @include clearfix;
+
+      &.third{
+        width: (100% / 3);
+      }
+}

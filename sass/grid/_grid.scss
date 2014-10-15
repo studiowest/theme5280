@@ -1,0 +1,21 @@
+$gutter: 2%;
+
+.row{
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+.column, .columns{
+      float: left;
+      box-sizing: border-box;
+
+      &.third { width: (100% / 3)- $gutter);
+        margin-right: $gutter);
+      }
+
+      &.two-third { width:((100% / 3) * 2);}
+      &.quarter {width: (100% / 4);}
+      &.half {width: (100% / 2);}
+}
