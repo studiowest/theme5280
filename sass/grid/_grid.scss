@@ -21,4 +21,12 @@ $gutter: 2%;
       &.half { width: (100% / 2); }
       &.fifth { width: (100% / 5); }
       &.three-fifths { width: ((100% / 5) * 3); }
+
+      // Responsive
+      @include media($tablet) {
+        width: 100%;
+
+      }
+
+      //@include media($bp_phone) {}
 }

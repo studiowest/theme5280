@@ -1,0 +1,21 @@
+.homepage-feature {
+	height: 200px;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}
+
+.portfolio-preview {
+	height: 150px;
+	position: relative;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+
+	span {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background: blue;
+		color: white;
+	}
+}
