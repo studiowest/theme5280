@@ -15,7 +15,65 @@
 		top: 0;
 		bottom: 0;
 		right: 0;
-		background: blue;
+		background: tan;
 		color: white;
-	}
 }
+}
+
+.home_heading {
+   font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; 
+}
+
+
+h1 {
+	color: 003366;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+
+p {
+    text-indent: 50px;
+    text-align: left;
+    line-height: 125%;
+    font-size: 16px;
+    font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+li {
+    float: none;
+    text-align: center;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: white;
+    background-color: #003366;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #ffcc00;
+}
+
+
+
+
+
+

@@ -29,7 +29,7 @@ get_header(); ?>
 				<!-- End Portfolio Description Area -->
 			</div>
 
-			<!-- First Row Here -->
+<!-- First Row Here -->
 				<div class="row">
 
 					<!--  Begin Column One Fifth; Image Here -->
@@ -49,9 +49,9 @@ get_header(); ?>
 					<!--  End Column One Fifth; Image Here -->
 
 				</div>
-			<!-- End First Row Here -->
+<!-- End First Row Here -->
 
-			<!-- Second Row Here -->
+<!-- Second Row Here -->
 				<div class="row">
 
 					<!--  Begin Column Three Fifths; Image Here -->
